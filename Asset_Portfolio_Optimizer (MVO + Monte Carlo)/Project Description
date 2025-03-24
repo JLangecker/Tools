@@ -1,0 +1,16 @@
+This project was written in python to take a set of asset returns as parameters and create mean variance optimized portfolios based on them. 
+It outputs a csv that can then be used to run a monte carlo simulation to test the created portfolios and compare their performance.
+
+It contains the following (uncompiled) files:
+- MVO.py ... A python script that takes in a .csv of asset returns, performs mean variance optimization and outputs a .csv containing the optimized portfolios
+- Monte_Carlo.py ... A python script that takes the created portfolios from the .csv and simultes market conditions for a given timeframe to check their performance.
+
+It also contains the following auxiliary file:
+- Data_Generator.xlsx ... which I used to generate normally distributed asset returns data to test the scripts
+
+The MVO.py file currently draws from "Asset_Returns_Data.csv" and outputs to "Example_Portfolios.csv", from which the Monte_Carlo.py file draws. As both scripts are 
+currently uncompiled, I used them from VSCode with the relevant libraries installed. They also both output key information to the terminal.
+
+For more detailed descriptions of how the scripts work, please refer to the comments in the scripts themselves.
+
+This is my first proper project, so I apologize in advance for ugly code formatting and any violations of coding etiquette that may have occurred. 
