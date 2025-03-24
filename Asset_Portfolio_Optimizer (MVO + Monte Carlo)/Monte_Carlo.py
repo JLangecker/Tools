@@ -1,7 +1,6 @@
 # This script will perfrom a Monte Carlo simulation on the portfolios generated with the MVO_export script
 # It assumes the average return and volatility are true
-# annual rebalancing is simulated
-# this is done 10000 times for a 50 year time frame
+# annual rebalancing and dollar cost averaging are not yet simulated
 
 # Notes to self:
 # use functions
@@ -203,5 +202,6 @@ for i in range(len(cov_matrix)):
 LT_matrix = cholesky_decompostion(correlation_matrix)
 # these returns should now have the same mean, stdev, and correlation structure as the returns from example_returns.csv
 
+# run the simulation 
 monte_carlo_simulation(portfolios_df, LT_matrix, 50, 10000, 100, asset_names_list)
-# easy game easy life
+
