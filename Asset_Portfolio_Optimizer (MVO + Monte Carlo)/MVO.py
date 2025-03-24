@@ -206,18 +206,14 @@ portfolio_df['original_asset_names'] = original_asset_names
 
 portfolio_df.to_csv(relative_filepath, index=False)
 # the CSV contains the target return and the weight of each asset in the portfolio for that target
-# return as well as the volatility
+# return as well as the volatility, and original asset names
 # One column is structured as follows: (Target return, asset1, asset2, asset3, asset4, portfolio volatility)
-# the last two columns contain the mean returns per asset and the stdev per asset
+# the last three columns contain the mean returns per asset, the stdev per asset and asset name
 
 #also export the covariance matrix
 relative_filepath = "data/Covariance_Matrix.csv"
 cov_matrix_df = pd.DataFrame(cov_matrix)
 cov_matrix_df.to_csv(relative_filepath, index = False)
 # the first row is not part of the matrix and is added automatically by pandas for legibiltiy
-
-
-# we're gamin' now bois
-# then we make a script for running a monte carlo simulation on the exported portfolios
 
 
