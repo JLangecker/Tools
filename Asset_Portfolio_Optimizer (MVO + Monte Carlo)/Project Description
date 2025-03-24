@@ -8,8 +8,9 @@ It contains the following (uncompiled) files:
 It also contains the following auxiliary file:
 - Data_Generator.xlsx ... which I used to generate normally distributed asset returns data to test the scripts
 
-The MVO.py file currently draws from "Asset_Returns_Data.csv" and outputs to "Example_Portfolios.csv", from which the Monte_Carlo.py file draws. As both scripts are 
-currently uncompiled, I used them from VSCode with the relevant libraries installed. They also both output key information to the terminal.
+The MVO.py file currently draws from "Asset_Returns_Data.csv" and outputs to "Example_Portfolios.csv" and "Covariance_Matrix.csv", 
+from which the Monte_Carlo.py file draws.
+As both scripts are currently uncompiled, I used them from VSCode with the relevant libraries installed. They also both output key information to the terminal.
 
 For more detailed descriptions of how the scripts work, please refer to the comments in the scripts themselves.
 
